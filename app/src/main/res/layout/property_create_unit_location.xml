@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/countryLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/text_input_layout_padding"
+        android:paddingEnd="@dimen/text_input_layout_padding"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+        android:hint="@string/country_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/countryValue"
+            style="@style/PF_Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:minHeight="@dimen/input_edit_text_minimum_height"
+            android:hint="@string/country_hint"
+            tools:text="$186.00" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/regionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/text_input_layout_padding"
+        android:paddingEnd="@dimen/text_input_layout_padding"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+        android:hint="@string/region_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/regionValue"
+            style="@style/PF_Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:minHeight="@dimen/input_edit_text_minimum_height"
+            tools:text="$186.00" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/addressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/text_input_layout_padding"
+        android:paddingEnd="@dimen/text_input_layout_padding"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+        android:hint="@string/address_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/addressValue"
+            style="@style/PF_Body"
+            android:inputType="textPostalAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:minHeight="@dimen/input_edit_text_minimum_height"
+            tools:text="$186.00" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

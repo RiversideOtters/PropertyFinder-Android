@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/feed_section_padding"
+    android:paddingEnd="@dimen/feed_section_padding">
+
+    <TextView
+        style="@style/PF_ExtraInfo"
+        android:id="@+id/propertyType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/presenter_section_vertical_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/PF_Title"
+        android:id="@+id/propertyName"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:ellipsize="end"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/propertyType" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/propertyOwnerImageCard"
+        android:layout_marginTop="@dimen/feed_card_padding"
+        android:layout_width="@dimen/property_action_owner_thumb_dimen"
+        android:layout_height="@dimen/property_action_owner_thumb_dimen"
+        app:cardCornerRadius="@dimen/property_action_owner_thumb_radius"
+        android:elevation="12dp"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/propertyName">
+        <ImageView
+            android:id="@+id/propertyOwnerImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        style="@style/PF_Body"
+        android:id="@+id/propertyAddress"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/card_details_margin"
+        android:paddingTop="@dimen/card_details_margin"
+        app:layout_constraintEnd_toStartOf="@+id/propertyOwnerImageCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/propertyOwnerImageCard" />
+
+    <TextView
+        style="@style/PF_Body"
+        android:id="@+id/propertyAvailability"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/card_details_margin"
+        android:paddingTop="@dimen/card_details_margin"
+        app:layout_constraintEnd_toStartOf="@+id/propertyOwnerImageCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/propertyAddress" />
+
+    <TextView
+        style="@style/PF_Body"
+        android:id="@+id/propertyOwnerName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/card_details_margin"
+        android:paddingTop="@dimen/card_details_margin"
+        app:layout_constraintEnd_toStartOf="@+id/propertyOwnerImageCard"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/propertyAvailability" />
+</androidx.constraintlayout.widget.ConstraintLayout>

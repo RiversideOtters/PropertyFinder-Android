@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/presenter_card_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/presenter_section_spacing">
+
+    <TextView
+        style="@style/PF_Title"
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/feed_title_padding"
+        android:paddingEnd="@dimen/feed_title_padding"
+        android:text="Heading"/>
+
+    <TextView
+        style="@style/PF_Body"
+        android:id="@+id/subHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/card_subheading_margin"
+        android:layout_marginStart="@dimen/feed_title_padding"
+        android:layout_marginEnd="@dimen/feed_title_padding"
+        android:text="SubHeading"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:nestedScrollingEnabled="false"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/card_subheading_margin"
+        android:paddingStart="@dimen/feed_section_padding"
+        android:paddingEnd="@dimen/feed_section_padding"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <Button
+        style="@style/ButtonOutline"
+        android:background="@drawable/ripple"
+        android:id="@+id/showAllButton"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/feed_show_all_button_height"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/feed_title_padding"
+        android:layout_marginStart="@dimen/feed_title_padding"
+        android:layout_marginEnd="@dimen/feed_title_padding"
+        android:text="Show all"/>
+
+</LinearLayout>

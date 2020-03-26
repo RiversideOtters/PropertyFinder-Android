@@ -1,0 +1,88 @@
+<resources>
+    <string name="app_name">Property Finder</string>
+    <string name="sample_info">Test</string>
+
+    <string name="inquire_price">Price upon inquiry</string>
+
+    <!--AFFINITY-->
+    <string name="task_affinity_create">com.property.finder.create</string>
+    <string name="task_affinity_details">com.property.finder.details</string>
+
+    <!--CREATE USER-->
+    <string name="account_details_header">Account Details</string>
+    <string name="account_info_header">Details</string>
+    <string name="name_hint">Name</string>
+    <string name="phone_hint">Phone</string>
+    <string name="email_hint">Email</string>
+    <string name="gender_title">Gender</string>
+
+    <!--CREATE PROPERTY-->
+    <string name="image_picker_header">Photos</string>
+    <string name="image_picker_caption">Tap to edit photos</string>
+    <string name="country_picker_header">Country</string>
+    <string name="unit_details_header">Basic Details</string>
+    <string name="unit_location_header">Location</string>
+    <string name="unit_availability_header">Availability</string>
+    <string name="unit_other_details_header">Other Details</string>
+    <string name="unit_regions_header">Regions</string>
+    <string name="unit_amenities_header">Amenities</string>
+    <string name="unit_account_details_header">Account Details</string>
+
+    <string name="rental_type_label">Property Type</string>
+    <string name="property_type_label">Property Type</string>
+    <string name="room_type_label">Room Type</string>
+    <string name="room_count_label">Number of bedrooms</string>
+
+    <string name="stay_duration_label">Stay Duration</string>
+
+    <string name="price_hint">Rental Price</string>
+    <string name="title_hint">Title</string>
+    <string name="description_hint">Description</string>
+    <string name="country_hint">Country</string>
+    <string name="region_hint">Region</string>
+    <string name="address_hint">Address</string>
+
+    <string name="availability_hint">Available from</string>
+
+    <string name="station_label">Nearest Stations</string>
+    <string name="gender_label">Gender Preferred</string>
+    <string name="occupation_label">Occupation</string>
+    <string name="amenities_label">Amenities</string>
+
+    <string name="account_name_hint">Name</string>
+    <string name="account_phone_hint">Phone</string>
+    <string name="account_gender_hint">Gender</string>
+    <string name="account_email_hint">Email</string>
+    <string name="account_password_hint">Password</string>
+
+    <string name="create_next">Next</string>
+    <string name="create_list_it">List it</string>
+
+    <!--PROPERTY-->
+    <string name="property_details_location_header">Location</string>
+    <string name="property_details_amenities_header">Amenities</string>
+    <string name="property_details_info_header">Details</string>
+    <string name="property_details_nearby_header">Things to do nearby</string>
+    <string name="contact">Inquire Now</string>
+
+    <!--FEED-->
+    <string name="feed_tenant_heading">Tenants near you</string>
+    <string name="feed_tenant_subheading">Browse the list of people looking for accommodation here.</string>
+    <string name="feed_tenant_show_all_button">Show all tenants</string>
+
+    <string name="feed_properties_heading">Properties near you</string>
+    <string name="feed_properties_subheading">Looking for a room or whole unit?</string>
+    <string name="feed_properties_show_all_button">Show all properties</string>
+
+    <string name="feed_suggestions_heading">What do you want to do today?</string>
+    <string name="feed_suggestions_post_room">List my room</string>
+    <string name="feed_suggestions_post_profile">List my profile</string>
+    <string name="feed_suggestions_room">Find rooms</string>
+    <string name="feed_suggestions_whole_unit">Find whole units</string>
+    <string name="feed_suggestions_tenant">Find tenants</string>
+
+    <string name="price_per_day_suffix">PER DAY</string>
+    <string name="price_per_week_suffix">PER WEEK</string>
+    <string name="price_per_month_suffix">PER MONTH</string>
+
+</resources>

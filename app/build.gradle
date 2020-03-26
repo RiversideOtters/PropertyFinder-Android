@@ -1,0 +1,79 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'maven'
+
+android {
+    compileSdkVersion androidCompileSdk
+    buildToolsVersion androidBuildTools
+
+    defaultConfig {
+        applicationId "com.chalkbox.propertyfinder"
+        minSdkVersion androidMinSdk
+        targetSdkVersion androidCompileSdk
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    kapt "com.google.dagger:dagger-compiler:$daggerVersion"
+
+    api fileTree(dir: 'libs', include: ['*.jar'])
+    api "androidx.paging:paging-runtime-ktx:$androidArchPaging"
+    api "androidx.appcompat:appcompat:$appcompatVersion"
+    api "androidx.core:core-ktx:$androidCoreKtxVersion"
+    api "androidx.cardview:cardview:$androidxCardViewVersion"
+    api "androidx.recyclerview:recyclerview:$androidxRecyclerViewVersion"
+    api "androidx.constraintlayout:constraintlayout:$constraintlayoutVersion"
+    api "com.firebaseui:firebase-ui-firestore:$firebaseFirestoreUIVersion"
+    api "com.google.android.gms:play-services-ads:$googlePlayServicesAdsVersion"
+    api "com.google.android.gms:play-services-auth:$googlePlayServicesAuthVersion"
+    api "com.google.code.gson:gson:$gsonVersion"
+    api "com.google.dagger:dagger:$daggerVersion"
+    api "com.google.firebase:firebase-auth:$firebaseAuthVersion"
+    api "com.google.firebase:firebase-core:$firebaseCoreVersion"
+    api "com.google.firebase:firebase-analytics:$firebaseAnalyticsVersion"
+    api "com.google.firebase:firebase-dynamic-links:$firebaseDynamicLinksVersion"
+    api "com.google.firebase:firebase-firestore:$firebaseFirestoreVersion"
+    api "com.google.firebase:firebase-config:$firebaseRemoteConfigVersion"
+    api "com.google.firebase:firebase-storage:$firebaseStorageVersion"
+
+    api "com.firebaseui:firebase-ui-auth:$firebaseUIAuthVersion"
+//    api "com.facebook.android:facebook-android-sdk:$facebookAndroidSdkVersion"
+//    api "com.twitter.sdk.android:twitter-core:$twitterCoreVersion"
+
+    api "com.squareup.picasso:picasso:$picassoVersion"
+    api "io.reactivex.rxjava2:rxjava:$rxJavaVersion"
+    api "io.reactivex.rxjava2:rxandroid:$rxAndroidVersion"
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    api "javax.inject:javax.inject:$jaxaXInjectVersion"
+
+    api "com.google.android.gms:play-services-maps:$playServicesMapsVersion"
+    api "com.github.tommykw:TagView:$tagViewVersion"
+
+    api "com.android.support:appcompat-v7:$appcompatVersion"
+    api "com.android.support:design:$androidSupportDesignVersion"
+
+
+    testImplementation "junit:junit:$junitVersion"
+
+    androidTestImplementation "androidx.test:runner:$androidxTestRunnerVersion"
+    androidTestImplementation "androidx.test.espresso:espresso-core:$espressoCoreVersion"
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlinReflectVersion"
+    implementation "com.google.android.material:material:$googleMaterialVersion"
+}
+
+apply plugin: 'com.google.gms.google-services'

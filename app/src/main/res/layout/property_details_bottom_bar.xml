@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomBar"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:background="@color/white"
+    android:elevation="2dp">
+
+    <View
+        android:id="@+id/bottomBarDivider"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey" />
+
+    <TextView
+        style="@style/PF_Header"
+        android:id="@+id/propertyPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/inquire_price" />
+
+    <TextView
+        style="@style/PF_Body"
+        android:id="@+id/propertyPriceType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/property_text_view_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+        app:layout_constraintBottom_toBottomOf="@id/propertyPrice"
+        app:layout_constraintEnd_toStartOf="@id/propertyContactButton"
+        app:layout_constraintStart_toEndOf="@id/propertyPrice"
+        android:text="@string/price_per_month_suffix"/>
+
+    <Button
+        style="@style/ButtonSolid"
+        android:background="@drawable/ripple"
+        android:id="@+id/propertyContactButton"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/feed_show_all_button_height"
+        android:layout_marginTop="@dimen/presenter_section_vertical_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginBottom="@dimen/presenter_section_vertical_margin"
+        android:gravity="center"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="@string/contact"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textAlignment="center" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

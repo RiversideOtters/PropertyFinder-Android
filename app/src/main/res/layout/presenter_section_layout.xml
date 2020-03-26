@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/sectionDivider"
+        layout="@layout/property_divider_layout" />
+
+    <TextView
+        style="@style/PF_Title"
+        android:id="@+id/sectionHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/presenter_section_vertical_margin"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin" />
+
+    <FrameLayout
+        android:id="@+id/sectionContent"
+        android:layout_marginTop="@dimen/presenter_section_content_top_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        style="@style/PF_Body"
+        android:visibility="gone"
+        android:id="@+id/sectionCaption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin" />
+
+</LinearLayout>

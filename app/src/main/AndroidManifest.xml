@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chalkbox.propertyfinder">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.flash"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="ANDROID.PERMISSION.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/BaseTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="example.com"
+                    android:scheme="https" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".auth.activity.AuthSignInActivity" />
+        <activity android:name=".auth.activity.AuthSignUpActivity" />
+
+        <activity android:name=".property.list.PropertyListActivity" />
+
+        <activity android:name=".property.details.PropertyDetailsActivity"
+            android:taskAffinity="@string/task_affinity_details" />
+
+
+        <activity
+            android:name=".property.create.PropertyCreateImageAndCountryActivity"
+            android:taskAffinity="@string/task_affinity_create" />
+        <activity
+            android:name=".property.create.PropertyCreateDetailsActivity"
+            android:taskAffinity="@string/task_affinity_create" />
+        <activity
+            android:name=".property.create.PropertyCreateAvailabilityActivity"
+            android:taskAffinity="@string/task_affinity_create" />
+        <activity
+            android:name=".property.create.PropertyCreateRegionActivity"
+            android:taskAffinity="@string/task_affinity_create" />
+        <activity
+            android:name=".property.create.PropertyUserCreateActivity"
+            android:taskAffinity="@string/task_affinity_create" />
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-3611518346729955~4708004180" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDXjtySHF8TDlW7Jvnmb4GDNoB7JAPPf4g" />
+
+        <uses-library android:name="com.google.android.maps" />
+
+
+    </application>
+
+</manifest>

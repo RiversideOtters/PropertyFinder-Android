@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_marginTop="@dimen/presenter_section_spacing"
+    android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+    android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+    android:background="@color/grey" />

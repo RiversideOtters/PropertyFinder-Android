@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+    android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/PF_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/property_details_amenities_header" />
+
+    <com.github.tommykw.tagview.TagView
+        style="@style/PF_Body"
+        android:id="@+id/propertyAmenityTags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/spacing_big"
+        android:layout_marginTop="@dimen/spacing_large"
+        android:gravity="start"
+        app:corner_radius="4dp"
+        app:horizontal_spacing="6dp"
+        app:left_drawable_padding="6dp"
+        app:sort_type="asc"
+        app:stroke_color="@color/gray"
+        app:stroke_width="1dp"
+        app:text_color="@color/gnt_gray"
+        app:text_font_size="6sp"
+        app:vertical_spacing="@dimen/spacing_small" />
+
+</LinearLayout>

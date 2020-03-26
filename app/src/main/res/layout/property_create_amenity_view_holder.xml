@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckedTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/amenityCheckbox"
+    style="@style/PF_Picker"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/amenities_row_height"
+    android:checkMark="@drawable/checked_text_view_drawable"
+    android:checked="true"
+    android:gravity="center"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />

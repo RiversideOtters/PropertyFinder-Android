@@ -1,0 +1,14 @@
+<androidx.recyclerview.widget.RecyclerView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/recycler_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    android:nestedScrollingEnabled="false"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/image_picker_horizontal_margin"
+    android:paddingTop="@dimen/image_recycler_view_top_margin"
+    android:paddingBottom="@dimen/image_recycler_view_bottom_margin"
+    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />

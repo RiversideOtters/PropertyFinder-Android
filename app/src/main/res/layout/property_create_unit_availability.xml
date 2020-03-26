@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/PF_TitleSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+        android:text="@string/unit_availability_header" />
+
+    <RadioButton
+        android:id="@+id/availabilityValue"
+        style="@style/RadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+        android:text="ABC" />
+
+    <com.chalkbox.propertyfinder.views.SettingValuesRadioGroup
+        android:id="@+id/leaseTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin" />
+
+</LinearLayout>

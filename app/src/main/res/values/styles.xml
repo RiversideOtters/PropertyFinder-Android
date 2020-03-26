@@ -1,0 +1,163 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- APP THEME -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowActivityTransitions">true</item>
+        <!--        <item name="android:windowAnimationStyle">@style/SlideLeftAnimation</item>-->
+        <item name="android:scrollbarTrackVertical">@null</item>
+        <!--        <item name="android:scrollbarThumbVertical">@drawable/bg_vertical_scrollbar</item>-->
+        <item name="windowActionModeOverlay">true</item>
+        <item name="android:statusBarColor">@color/status_bar_color</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+        <item name="colorError">@color/colorPrimaryDark</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- PROGRESS BAR -->
+    <style name="ProgressBarStyle" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressBackgroundTint">@color/text_light</item>
+        <item name="android:progressTint">@color/colorPrimary</item>
+        <item name="android:scaleY">5</item>
+    </style>
+
+    <!-- CARDS -->
+    <style name="CardView">
+        <item name="android:orientation">vertical</item>
+        <item name="cardElevation">@dimen/feed_card_elevation</item>
+    </style>
+
+    <style name="ImagePickerCardView" parent="CardView">
+        <item name="android:layout_width">@dimen/image_picker_card_square_dimen</item>
+        <item name="android:layout_height">@dimen/image_picker_card_square_dimen</item>
+        <item name="android:layout_marginRight">@dimen/image_picker_card_spacing</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+    </style>
+
+    <style name="SquareCardView" parent="CardView">
+        <item name="android:layout_width">@dimen/feed_card_square_dimen</item>
+        <item name="android:layout_height">@dimen/feed_card_square_dimen</item>
+        <item name="android:layout_marginRight">@dimen/feed_card_spacing</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+    </style>
+
+    <style name="WideCardView" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/property_list_card_margin</item>
+        <item name="android:layout_marginLeft">@dimen/property_list_card_margin</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+    </style>
+
+    <style name="LongCardView" parent="CardView">
+        <item name="android:layout_width">@dimen/feed_card_long_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/feed_card_spacing</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+    </style>
+
+    <style name="FullCardView" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/feed_card_tall_height</item>
+        <item name="android:layout_marginRight">@dimen/feed_card_spacing</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+    </style>
+
+    <style name="UserLoginCardView" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">@dimen/feed_card_spacing</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+    </style>
+
+    <style name="SearchCardView" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+        <item name="cardElevation">@dimen/search_feed_card_elevation</item>
+    </style>
+
+    <!-- BUTTONS -->
+    <style name="ButtonOutline" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_rounded_corners</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+        <item name="cardElevation">@dimen/search_feed_card_elevation</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_semi_bold</item>
+    </style>
+
+    <style name="ButtonSolid" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_rounded_corners</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+        <item name="cardElevation">@dimen/search_feed_card_elevation</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_semi_bold</item>
+    </style>
+
+    <!-- RADIO BUTTON -->
+    <style name="RadioButton">
+        <item name="android:background">@drawable/radio_button_background</item>
+        <item name="android:button">@android:color/transparent</item>
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+        <item name="android:textColor">@color/radio_button_color</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+        <item name="android:paddingStart">14dp</item>
+        <item name="android:paddingEnd">14dp</item>
+    </style>
+
+    <!-- DATE PICKER -->
+    <style name="DatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+
+
+    <!-- TEXT -->
+    <style name="PF_Header" parent="TextAppearance.AppCompat.Title">
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="PF_Title" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:fontFamily">@font/proxima_nova_bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="PF_SubTitle" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:fontFamily">@font/proxima_nova_semi_bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="PF_TitleSmall" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_semi_bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="PF_Body" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+        <item name="lineHeight">24sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_reg</item>
+        <item name="android:textColor">@color/text_medium</item>
+    </style>
+
+    <style name="PF_Picker" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_semi_bold</item>
+        <item name="android:textColor">@color/text_dark</item>
+    </style>
+
+    <style name="PF_ExtraInfo" parent="TextAppearance.AppCompat.Caption">
+        <item name="android:textSize">11sp</item>
+        <item name="android:fontFamily">@font/proxima_nova_semi_bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="PF_Button" parent="PF_Body" />
+
+</resources>

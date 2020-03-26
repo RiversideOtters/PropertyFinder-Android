@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="@dimen/presenter_section_horizontal_margin"
+    android:paddingEnd="@dimen/presenter_section_horizontal_margin"
+    android:orientation="vertical">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/rentalPriceLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/price_hint"
+        android:paddingStart="@dimen/text_input_layout_padding"
+        android:paddingEnd="@dimen/text_input_layout_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/rentalPriceValue"
+            style="@style/PF_Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:minHeight="@dimen/input_edit_text_minimum_height"
+            android:inputType="number"
+            tools:text="$186.00" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/propertyTitleLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/title_hint"
+        android:paddingStart="@dimen/text_input_layout_padding"
+        android:paddingEnd="@dimen/text_input_layout_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyTitleValue"
+            style="@style/PF_Body"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:minHeight="@dimen/input_edit_text_minimum_height"
+            tools:text="$186.00" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/propertyDescriptionLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/description_hint"
+        android:paddingStart="@dimen/text_input_layout_padding"
+        android:paddingEnd="@dimen/text_input_layout_padding">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/propertyDescriptionValue"
+            style="@style/PF_Body"
+            android:inputType="textMultiLine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:minHeight="@dimen/input_edit_text_minimum_height"
+            tools:text="$186.00" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.chalkbox.propertyfinder.views.SettingValuesRadioGroup
+        android:id="@+id/rentalTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.chalkbox.propertyfinder.views.SettingValuesRadioGroup
+        android:id="@+id/roomTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.chalkbox.propertyfinder.views.SettingValuesRadioGroup
+        android:id="@+id/roomCountLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.chalkbox.propertyfinder.views.SettingValuesRadioGroup
+        android:id="@+id/propertyTypeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

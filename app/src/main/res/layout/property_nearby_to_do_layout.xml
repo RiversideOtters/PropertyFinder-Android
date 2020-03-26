@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/PF_Header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/presenter_section_horizontal_margin"
+        android:layout_marginEnd="@dimen/presenter_section_horizontal_margin"
+        android:text="@string/property_details_nearby_header" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/propertyDetails"
+            style="@style/PF_Body"
+            android:layout_width="1000dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/presenter_section_horizontal_margin"
+            android:paddingTop="@dimen/presenter_section_separator">
+
+            <include layout="@layout/card_view_feed_property" />
+
+            <include layout="@layout/card_view_feed_property" />
+
+            <include layout="@layout/card_view_feed_property" />
+
+            <include layout="@layout/card_view_feed_property" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

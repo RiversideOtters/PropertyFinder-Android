@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Presenter-->
+    <dimen name="presenter_section_spacing">22dp</dimen>
+    <dimen name="presenter_section_separator">14dp</dimen>
+    <dimen name="presenter_section_horizontal_margin">20dp</dimen>
+    <dimen name="presenter_section_vertical_margin">14dp</dimen>
+    <dimen name="presenter_section_content_top_margin">8dp</dimen>
+    <dimen name="presenter_sub_section_vertical_margin">6dp</dimen>
+    <dimen name="presenter_section_text_input_layout_margin">20dp</dimen>
+    <dimen name="text_input_layout_padding">-2dp</dimen>
+
+    <!--Search-->
+    <dimen name="main_search_card_margin">20dp</dimen>
+    <dimen name="search_icon_dimen">30dp</dimen>
+    <dimen name="search_feed_card_padding">6dp</dimen>
+    <dimen name="search_feed_card_elevation">2dp</dimen>
+
+    <!--Property List-->
+    <dimen name="property_list_card_margin">20dp</dimen>
+
+    <!--Property Details-->
+    <dimen name="currency_label_width">80dp</dimen>
+    <dimen name="property_action_owner_thumb_dimen">60dp</dimen>
+    <dimen name="property_action_owner_thumb_radius">30dp</dimen>
+    <dimen name="property_details_img_height">220dp</dimen>
+    <dimen name="property_text_view_margin">4dp</dimen>
+
+    <!--Property Create-->
+    <dimen name="image_picker_card_square_dimen">80dp</dimen>
+    <dimen name="country_picker_row_margin">14dp</dimen>
+    <dimen name="input_edit_text_minimum_height">48dp</dimen>
+    <dimen name="amenities_row_height">44dp</dimen>
+    <dimen name="check_mark_dimensions">24dp</dimen>
+
+    <!--Feed-->
+    <dimen name="feed_title_padding">22dp</dimen>
+    <dimen name="feed_section_padding">20dp</dimen>
+    <dimen name="feed_card_spacing">10dp</dimen>
+    <dimen name="feed_card_margin">10dp</dimen>
+    <dimen name="card_title_margin">10dp</dimen>
+    <dimen name="card_details_margin">4dp</dimen>
+    <dimen name="card_subheading_margin">4dp</dimen>
+    <dimen name="feed_card_square_img_height">100dp</dimen>
+    <dimen name="feed_card_square_dimen">150dp</dimen>
+    <dimen name="feed_card_long_width">300dp</dimen>
+    <dimen name="feed_card_tall_height">380dp</dimen>
+    <dimen name="feed_card_short_height">150dp</dimen>
+    <dimen name="feed_card_height">180dp</dimen>
+    <dimen name="feed_card_elevation">1dp</dimen>
+    <dimen name="corner_radius">4dp</dimen>
+    <dimen name="icon_dimen_standard">40dp</dimen>
+    <dimen name="feed_card_padding">10dp</dimen>
+    <dimen name="feed_show_all_button_height">40dp</dimen>
+
+    <!--IMAGE PICKER-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="image_recycler_view_top_margin">4dp</dimen>
+    <dimen name="image_recycler_view_bottom_margin">8dp</dimen>
+    <dimen name="image_picker_horizontal_margin">18dp</dimen>
+    <dimen name="image_picker_card_spacing">4dp</dimen>
+    <dimen name="image_picker_image_margin">6dp</dimen>
+    <dimen name="image_picker_add_placeholder_dimension">44dp</dimen>
+    <dimen name="image_picker_delete_button_dimension">24dp</dimen>
+
+    <!--Ads-->
+    <dimen name="ad_card_elevation">0dp</dimen>
+    <item name="gnt_medium_template_bottom_weight" format="float" type="dimen">0.4</item>
+    <item name="gnt_text_row_weight" format="float" type="dimen">0.25</item>
+    <item name="gnt_media_view_weight" format="float" type="dimen">1.0</item>
+    <item name="gnt_medium_template_top_weight" format="float" type="dimen">0.2</item>
+    <dimen name="gnt_default_margin">10dp</dimen>
+    <dimen name="gnt_button_height">40dp</dimen>
+    <dimen name="gnt_text_size_small">12sp</dimen>
+    <dimen name="gnt_text_size_large">15sp</dimen>
+    <dimen name="gnt_icon_size">40dp</dimen>
+    <dimen name="gnt_ad_indicator_width">25dp</dimen>
+    <dimen name="gnt_ad_indicator_height">20dp</dimen>
+    <dimen name="gnt_ad_indicator_bar_height">30dp</dimen>
+    <dimen name="gnt_ad_indicator_top_margin">0dp</dimen>
+    <dimen name="gnt_ad_indicator_bottom_margin">10dp</dimen>
+    <dimen name="gnt_ad_indicator_text_size">10sp</dimen>
+    <dimen name="gnt_small_cta_button_height">30dp</dimen>
+    <dimen name="gnt_medium_cta_button_height">50dp</dimen>
+    <dimen name="gnt_no_margin">0dp</dimen>
+    <dimen name="gnt_no_size">0dp</dimen>
+
+</resources>
